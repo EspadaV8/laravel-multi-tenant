@@ -88,6 +88,7 @@ class TenantScopeTest extends PHPUnit_Framework_TestCase
 
         $scope->shouldDeferMissing();
         $scope->shouldReceive('getTenantId')->once()->andReturn(1);
+        $scope->shouldReceive('hasTenant')->once()->andReturn(true);
 
         $model->shouldReceive('getTenantColumns')->once()->andReturn(['column']);
 
