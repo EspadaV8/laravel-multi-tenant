@@ -1,7 +1,7 @@
 Laravel Multi Tenant
 ====================
 
-![](https://travis-ci.org/AuraEQ/laravel-multi-tenant.svg?branch=master)
+![](https://api.travis-ci.org/EspadaV8/laravel-multi-tenant.svg?branch=feature/laravel-5)
 
 A general purpose multi-tenancy package for Laravel 4.2+. Accidentally derived from the work of [@tonydew](https://github.com/tonydew), and with help from [@rizqidjamaluddin](https://github.com/rizqidjamaluddin)
 
