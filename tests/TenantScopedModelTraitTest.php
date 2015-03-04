@@ -1,7 +1,5 @@
 <?php
 
-use AuraIsHere\LaravelMultiTenant\Traits\TenantScopedModelTrait;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery as m;
 
 class TenantScopedModelTraitTest extends PHPUnit_Framework_TestCase
@@ -37,23 +35,5 @@ class TenantScopedModelTraitTest extends PHPUnit_Framework_TestCase
     public function testFindOrFailThrowsTenantException()
     {
         TenantScopedModelStub::findOrFail(1, []);
-    }
-}
-
-class TenantScopedModelStub extends ParentModel
-{
-    use TenantScopedModelTrait;
-
-    public function getTable()
-    {
-        return 'table';
-    }
-}
-
-class ParentModel
-{
-    public static function findOrFail($id, $columns)
-    {
-        throw new ModelNotFoundException();
     }
 }
