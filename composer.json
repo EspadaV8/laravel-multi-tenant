@@ -1,6 +1,7 @@
 {
     "name": "aura-is-here/laravel-multi-tenant",
     "description": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "Caleb Fidecaro",
