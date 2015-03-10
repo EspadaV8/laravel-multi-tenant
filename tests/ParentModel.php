@@ -1,11 +1,8 @@
 <?php
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class ParentModel
+class ParentModel extends Model
 {
-    public static function findOrFail($id, $columns)
-    {
-        throw new ModelNotFoundException();
-    }
 }
